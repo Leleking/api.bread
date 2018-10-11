@@ -30,10 +30,15 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="/assets/fonts/material-design/material-design.min.css">
     <link rel="stylesheet" href="/assets/fonts/brand-icons/brand-icons.min.css">
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
 
     <!--Skin -->
     <link rel="stylesheet" href="/assets/skins/red.min.css">
+    <style>
+a:link{
+  text-decoration:none;
+}
+</style>
     
     <!--[if lt IE 9]>
     <script src="/assets/vendor/html5shiv/html5shiv.min.js"></script>
@@ -91,137 +96,6 @@
               <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
                 <span class="sr-only">Toggle fullscreen</span>
               </a>
-            </li>
-            <li class="nav-item dropdown dropdown-fw dropdown-mega">
-              <a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="fade"
-                role="button">Mega <i class="icon md-chevron-down" aria-hidden="true"></i></a>
-              <div class="dropdown-menu" role="menu">
-                <div class="mega-content">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h5>UI Kit</h5>
-                      <ul class="blocks-2">
-                        <li class="mega-menu m-0">
-                          <ul class="list-icons">
-                            <li><i class="md-chevron-right" aria-hidden="true"></i><a href="../advanced/animation.html">Animation</a></li>
-                            <li><i class="md-chevron-right" aria-hidden="true"></i><a href="../uikit/buttons.html">Buttons</a></li>
-                            <li><i class="md-chevron-right" aria-hidden="true"></i><a href="../uikit/colors.html">Colors</a></li>
-                            <li><i class="md-chevron-right" aria-hidden="true"></i><a href="../uikit/dropdowns.html">Dropdowns</a></li>
-                            <li><i class="md-chevron-right" aria-hidden="true"></i><a href="../uikit/icons.html">Icons</a></li>
-                            <li><i class="md-chevron-right" aria-hidden="true"></i><a href="../advanced/lightbox.html">Lightbox</a></li>
-                          </ul>
-                        </li>
-                        <li class="mega-menu m-0">
-                          <ul class="list-icons">
-                            <li><i class="md-chevron-right" aria-hidden="true"></i><a href="../uikit/modals.html">Modals</a></li>
-                            <li><i class="md-chevron-right" aria-hidden="true"></i><a href="../uikit/panel-structure.html">Panels</a></li>
-                            <li><i class="md-chevron-right" aria-hidden="true"></i><a href="../structure/overlay.html">Overlay</a></li>
-                            <li><i class="md-chevron-right" aria-hidden="true"></i><a href="../uikit/tooltip-popover.html ">Tooltips</a></li>
-                            <li><i class="md-chevron-right" aria-hidden="true"></i><a href="../advanced/scrollable.html">Scrollable</a></li>
-                            <li><i class="md-chevron-right" aria-hidden="true"></i><a href="../uikit/typography.html">Typography</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4">
-                      <h5>Media
-                        <span class="badge badge-pill badge-success">4</span>
-                      </h5>
-                      <ul class="blocks-3">
-                        <li>
-                          <a class="thumbnail m-0" href="javascript:void(0)">
-                            <img class="w-full" src="/assets/photos/placeholder.png" alt="..." />
-                          </a>
-                        </li>
-                        <li>
-                          <a class="thumbnail m-0" href="javascript:void(0)">
-                            <img class="w-full" src="/assets/photos/placeholder.png" alt="..." />
-                          </a>
-                        </li>
-                        <li>
-                          <a class="thumbnail m-0" href="javascript:void(0)">
-                            <img class="w-full" src="/assets/photos/placeholder.png" alt="..." />
-                          </a>
-                        </li>
-                        <li>
-                          <a class="thumbnail m-0" href="javascript:void(0)">
-                            <img class="w-full" src="/assets/photos/placeholder.png" alt="..." />
-                          </a>
-                        </li>
-                        <li>
-                          <a class="thumbnail m-0" href="javascript:void(0)">
-                            <img class="w-full" src="/assets/photos/placeholder.png" alt="..." />
-                          </a>
-                        </li>
-                        <li>
-                          <a class="thumbnail m-0" href="javascript:void(0)">
-                            <img class="w-full" src="/assets/photos/placeholder.png" alt="..." />
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4">
-                      <h5 class="mb-0">Accordion</h5>
-                      <!-- Accordion -->
-                      <div class="panel-group panel-group-simple" id="siteMegaAccordion" aria-multiselectable="true"
-                        role="tablist">
-                        <div class="panel">
-                          <div class="panel-heading" id="siteMegaAccordionHeadingOne" role="tab">
-                            <a class="panel-title" data-toggle="collapse" href="#siteMegaCollapseOne" data-parent="#siteMegaAccordion"
-                              aria-expanded="false" aria-controls="siteMegaCollapseOne">
-                              Collapsible Group Item #1
-                            </a>
-                          </div>
-                          <div class="panel-collapse collapse" id="siteMegaCollapseOne" aria-labelledby="siteMegaAccordionHeadingOne"
-                            role="tabpanel">
-                            <div class="panel-body">
-                              De moveat laudatur vestra parum doloribus labitur sentire partes, eripuit praesenti
-                              congressus ostendit alienae, voluptati ornateque accusamus
-                              clamat reperietur convicia albucius.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="panel">
-                          <div class="panel-heading" id="siteMegaAccordionHeadingTwo" role="tab">
-                            <a class="panel-title collapsed" data-toggle="collapse" href="#siteMegaCollapseTwo"
-                              data-parent="#siteMegaAccordion" aria-expanded="false"
-                              aria-controls="siteMegaCollapseTwo">
-                              Collapsible Group Item #2
-                            </a>
-                          </div>
-                          <div class="panel-collapse collapse" id="siteMegaCollapseTwo" aria-labelledby="siteMegaAccordionHeadingTwo"
-                            role="tabpanel">
-                            <div class="panel-body">
-                              Praestabiliorem. Pellat excruciant legantur ullum leniter vacare foris voluptate
-                              loco ignavi, credo videretur multoque choro fatemur mortis
-                              animus adoptionem, bello statuat expediunt naturales.
-                            </div>
-                          </div>
-                        </div>
-    
-                        <div class="panel">
-                          <div class="panel-heading" id="siteMegaAccordionHeadingThree" role="tab">
-                            <a class="panel-title collapsed" data-toggle="collapse" href="#siteMegaCollapseThree"
-                              data-parent="#siteMegaAccordion" aria-expanded="false"
-                              aria-controls="siteMegaCollapseThree">
-                              Collapsible Group Item #3
-                            </a>
-                          </div>
-                          <div class="panel-collapse collapse" id="siteMegaCollapseThree" aria-labelledby="siteMegaAccordionHeadingThree"
-                            role="tabpanel">
-                            <div class="panel-body">
-                              Horum, antiquitate perciperet d conspectum locus obruamus animumque perspici probabis
-                              suscipere. Desiderat magnum, contenta poena desiderant
-                              concederetur menandri damna disputandum corporum.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Accordion -->
-                    </div>
-                  </div>
-                </div>
-              </div>
             </li>
           </ul>
           <!-- End Navbar Toolbar -->
@@ -406,50 +280,7 @@
                     </a>
                   </li>
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="">
-                      <span class="site-menu-title">Recurring Profiles</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../layouts/menubar-push.html">
-                      <span class="site-menu-title">Filters</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item has-sub">
-                    <a href="javascript:void(0)">
-                      <span class="site-menu-title">Attributes</span>
-                      <span class="site-menu-arrow"></span>
-                    </a>
-                    <ul class="site-menu-sub">
-                      <li class="site-menu-item">
-                        <a class="animsition-link" href="../layouts/aside-left-fixed.html">
-                          <span class="site-menu-title">Attributes</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link" href="../layouts/aside-right-fixed.html">
-                          <span class="site-menu-title">Attribute Groups</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../layouts/grids.html">
-                      <span class="site-menu-title">Options</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../layouts/layout-grid.html">
-                      <span class="site-menu-title">Manufactures</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
                     <a class="animsition-link" href="../layouts/headers.html">
-                      <span class="site-menu-title">Reviews</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../layouts/panel-transition.html">
                       <span class="site-menu-title">Reviews</span>
                     </a>
                   </li>
@@ -473,21 +304,10 @@
                     </a>
                   </li>
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="../pages/gallery.html">
-                      <span class="site-menu-title">Recurring Profiles</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../pages/gallery-grid.html">
+                    <a class="animsition-link" href="/admin/orders/returns">
                       <span class="site-menu-title">Returns</span>
                     </a>
                   </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../pages/search-result.html">
-                      <span class="site-menu-title">Gift Vouchers</span>
-                    </a>
-                  </li>
-                  
                 </ul>
               </li>
               <li class="site-menu-item has-sub">
@@ -497,102 +317,20 @@
                                 <span class="site-menu-arrow"></span>
                     </a>
                 <ul class="site-menu-sub">
-                  <li class="site-menu-item has-sub">
-                    <a href="javascript:void(0)">
-                      <span class="site-menu-title">Panel</span>
-                      <span class="site-menu-arrow"></span>
-                    </a>
-                    <ul class="site-menu-sub">
-                      <li class="site-menu-item">
-                        <a class="animsition-link" href="../uikit/panel-structure.html">
-                          <span class="site-menu-title">Panel Structure</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link" href="../uikit/panel-actions.html">
-                          <span class="site-menu-title">Panel Actions</span>
-                        </a>
-                      </li>
-                      <li class="site-menu-item">
-                        <a class="animsition-link" href="../uikit/panel-portlets.html">
-                          <span class="site-menu-title">Panel Portlets</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
+                  
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="../uikit/buttons.html">
-                      <span class="site-menu-title">Buttons</span>
+                    <a class="animsition-link" href="/admin/customers">
+                      <span class="site-menu-title">Customers</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="../uikit/cards.html">
-                      <span class="site-menu-title">Cards</span>
+                    <a class="animsition-link" href="/admin/customers/groups">
+                      <span class="site-menu-title">Customers Groups</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="../uikit/dropdowns.html">
-                      <span class="site-menu-title">Dropdowns</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../uikit/icons.html">
-                      <span class="site-menu-title">Icons</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../uikit/list.html">
-                      <span class="site-menu-title">List</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../uikit/tooltip-popover.html">
-                      <span class="site-menu-title">Tooltip &amp; Popover</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../uikit/modals.html">
-                      <span class="site-menu-title">Modals</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../uikit/tabs-accordions.html">
-                      <span class="site-menu-title">Tabs &amp; Accordions</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../uikit/images.html">
-                      <span class="site-menu-title">Images</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../uikit/badges.html">
-                      <span class="site-menu-title">Badges</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../uikit/progress-bars.html">
-                      <span class="site-menu-title">Progress Bars</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../uikit/carousel.html">
-                      <span class="site-menu-title">Carousel</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../uikit/typography.html">
-                      <span class="site-menu-title">Typography</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../uikit/colors.html">
-                      <span class="site-menu-title">Colors</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../uikit/utilities.html">
-                      <span class="site-menu-title">Utilties</span>
+                    <a class="animsition-link" href="/admin/customers/approvals">
+                      <span class="site-menu-title">Customer Approvals</span>
                     </a>
                   </li>
                 </ul>
@@ -606,77 +344,17 @@
                 <ul class="site-menu-sub">
                   <li class="site-menu-item hidden-sm-down site-tour-trigger">
                     <a href="javascript:void(0)">
-                      <span class="site-menu-title">Tour</span>
+                      <span class="site-menu-title">Marketing</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="../advanced/animation.html">
-                      <span class="site-menu-title">Animation</span>
+                      <span class="site-menu-title">Coupons</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="../advanced/highlight.html">
-                      <span class="site-menu-title">Highlight</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../advanced/lightbox.html">
-                      <span class="site-menu-title">Lightbox</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../advanced/scrollable.html">
-                      <span class="site-menu-title">Scrollable</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../advanced/rating.html">
-                      <span class="site-menu-title">Rating</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../advanced/context-menu.html">
-                      <span class="site-menu-title">Context Menu</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../advanced/alertify.html">
-                      <span class="site-menu-title">Alertify</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../advanced/masonry.html">
-                      <span class="site-menu-title">Masonry</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../advanced/treeview.html">
-                      <span class="site-menu-title">Treeview</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../advanced/toastr.html">
-                      <span class="site-menu-title">Toastr</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../advanced/maps-vector.html">
-                      <span class="site-menu-title">Vector Maps</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../advanced/maps-google.html">
-                      <span class="site-menu-title">Google Maps</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../advanced/sortable-nestable.html">
-                      <span class="site-menu-title">Sortable &amp; Nestable</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../advanced/bootbox-sweetalert.html">
-                      <span class="site-menu-title">Bootbox &amp; Sweetalert</span>
+                      <span class="site-menu-title">Mail</span>
                     </a>
                   </li>
                 </ul>
@@ -684,93 +362,23 @@
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)">
                         <i class="site-menu-icon md-settings" aria-hidden="true"></i>
-                        <span class="site-menu-title">Systems</span>
+                        <span class="site-menu-title">System</span>
                                 <span class="site-menu-arrow"></span>
                     </a>
                 <ul class="site-menu-sub">
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/alerts.html">
-                      <span class="site-menu-title">Alerts</span>
+                    <a class="animsition-link" href="/admin/settings">
+                      <span class="site-menu-title">Settings</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/ribbon.html">
-                      <span class="site-menu-title">Ribbon</span>
+                    <a class="animsition-link" href="/admin/localisation">
+                      <span class="site-menu-title">Localisation</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/pricing-tables.html">
-                      <span class="site-menu-title">Pricing Tables</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/overlay.html">
-                      <span class="site-menu-title">Overlay</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/cover.html">
-                      <span class="site-menu-title">Cover</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/timeline-simple.html">
-                      <span class="site-menu-title">Simple Timeline</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/timeline.html">
-                      <span class="site-menu-title">Timeline</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/step.html">
-                      <span class="site-menu-title">Step</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/comments.html">
-                      <span class="site-menu-title">Comments</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/media.html">
-                      <span class="site-menu-title">Media</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/chat.html">
-                      <span class="site-menu-title">Chat</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/testimonials.html">
-                      <span class="site-menu-title">Testimonials</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/nav.html">
-                      <span class="site-menu-title">Nav</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/navbars.html">
-                      <span class="site-menu-title">Navbars</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/blockquotes.html">
-                      <span class="site-menu-title">Blockquotes</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/pagination.html">
-                      <span class="site-menu-title">Pagination</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../structure/breadcrumbs.html">
-                      <span class="site-menu-title">Breadcrumbs</span>
+                    <a class="animsition-link" href="/admin/maintenance">
+                      <span class="site-menu-title">Maintenance</span>
                     </a>
                   </li>
                 </ul>
@@ -783,33 +391,13 @@
                     </a>
                 <ul class="site-menu-sub">
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="../widgets/statistics.html">
-                      <span class="site-menu-title">Statistics Widgets</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../widgets/data.html">
-                      <span class="site-menu-title">Data Widgets</span>
+                    <a class="animsition-link" href="/admin/reports">
+                      <span class="site-menu-title">Reports</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
                     <a class="animsition-link" href="../widgets/blog.html">
-                      <span class="site-menu-title">Blog Widgets</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../widgets/chart.html">
-                      <span class="site-menu-title">Chart Widgets</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../widgets/social.html">
-                      <span class="site-menu-title">Social Widgets</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../widgets/weather.html">
-                      <span class="site-menu-title">Weather Widgets</span>
+                      <span class="site-menu-title">Statistics</span>
                     </a>
                   </li>
                 </ul>

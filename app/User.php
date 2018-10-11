@@ -29,4 +29,7 @@ class User extends Authenticatable
     public function isAdmin(){
         return $this->isAdmin;
     }
+    public function detail(){
+        return $this->hasOne('App\model\userDetail');
+    }
 }

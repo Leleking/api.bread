@@ -86,7 +86,10 @@ class productController extends Controller
      */
     public function edit($id)
     {
-        //
+        $product  = product::find($id);
+        $category = category::all();
+
+        return view('defaultPages.product.view')->with('product',$product)->with('category',$category);
     }
 
     /**
@@ -96,9 +99,35 @@ class productController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $this->validate($request,[
+            'name'=>'required',
+            'details'=> 'required',
+            'category_id'=>'required',
+            'pieces'=>'required',
+            'price'=>'required'
+          ]);
+        $image_file= $request->image;
+        
+        if($image_file){
+            $imagename=$image_file->getClientOriginalName();
+            $image_file->move('img/product',$imagename);
+            $image_file= $imagename;
+
+        }
+        $product = product::find($request->product_id);
+        $product->category_id = $request->category_id;
+        $product->name=$request->name;
+        $product->details=$request->details;
+        if($image_file){
+        $product->image=$image_file;
+        }
+        $product->pieces=$request->pieces;
+        $product->price=$request->price;
+        $product->user_id=Auth()->user()->id;
+        $product->save();
+        return back()->withMessage("Product successfully Edited");
     }
 
     /**

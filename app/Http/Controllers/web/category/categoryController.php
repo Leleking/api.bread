@@ -25,7 +25,7 @@ class categoryController extends Controller
      */
     public function create()
     {
-        //
+    
     }
 
     /**
@@ -36,7 +36,16 @@ class categoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'name'=>'required',
+            'details'=> 'required'
+          ]);
+          $category = new category;
+          $category->name = $request->name;
+          $category->details = $request->details;
+          $category->user_id =  auth()->user()->id;
+          $category->save();
+          return back()->withMessage("Category successfully added, please go to the products menu to add new products");
     }
 
     /**
@@ -58,7 +67,7 @@ class categoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        echo "fghjk";
     }
 
     /**

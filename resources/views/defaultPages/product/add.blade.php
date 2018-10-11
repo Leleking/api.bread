@@ -13,7 +13,7 @@
           </div>
           <div class="modal-body">
             <div class="row">
-              <div class="col-xl-4 form-group">
+              <div class="col-xl-3 form-group">
                 <input type="text" class="form-control" name="name" placeholder="Product Name">
               </div>
               <div class="col-xl-4 form-group">
@@ -23,17 +23,23 @@
                     @endforeach
                 </select>
               </div>
-              <div class="col-xl-4 form-group">
+              <div class="col-xl-3 form-group">
                 <input type="text" class="form-control" name="pieces" placeholder="pieces">
               </div>
-              <div class="col-xl-4 form-group">
+              <div class="col-xl-2 form-group">
                     <input type="text" class="form-control" name="price" placeholder="price">
-              </div>
-              <div class="col-xl-8 form-group">
-                    <input type="file" class="form-control" name="image">
               </div>
               <div class="col-xl-12 form-group">
                 <textarea class="form-control" name="details" rows="5" placeholder="Details"></textarea>
+              </div>
+              <div class="col-xl-12 form-group">
+                  <div class="example-wrap">
+                      <h4 class="example-title">Upload Product Image</h4>
+                      <div class="example">
+                        <input type="file" id="input-file-now" name="image" data-plugin="dropify" data-default-file=""
+                        />
+                      </div>
+                    </div>
               </div>
               <div class="col-md-12 float-left">
                 <button class="btn btn-primary btn-outline" type="submit">Add Product</button>

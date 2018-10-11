@@ -23,8 +23,8 @@
               <div class="content-text text-center mb-0">
                 <i class="text-danger icon wb-triangle-up font-size-20">
             </i>
-                <span class="font-size-40 font-weight-100">399</span>
-                <p class="blue-grey-400 font-weight-100 m-0">+45% From previous month</p>
+                <span class="font-size-40 font-weight-100">{{$orderCount}}</span>
+                
               </div>
             </div>
           </div>
@@ -39,8 +39,7 @@
               <div class="content-text text-center mb-0">
                 <i class="text-success icon wb-triangle-down font-size-20">
             </i>
-                <span class="font-size-40 font-weight-100">$18,628</span>
-                <p class="blue-grey-400 font-weight-100 m-0">+45% From previous month</p>
+                <span class="font-size-40 font-weight-100">{{$income}}</span>
               </div>
             </div>
           </div>
@@ -51,12 +50,12 @@
               <button type="button" class="btn btn-floating btn-xs btn-success">
                 <i class="icon wb-eye"></i>
               </button>
-              <span class="ml-15 font-weight-400">VISITORS</span>
+              <span class="ml-15 font-weight-400">Pending</span>
               <div class="content-text text-center mb-0">
                 <i class="text-danger icon wb-triangle-up font-size-20">
             </i>
-                <span class="font-size-40 font-weight-100">23,456</span>
-                <p class="blue-grey-400 font-weight-100 m-0">+25% From previous month</p>
+                <span class="font-size-40 font-weight-100">{{count($orderPending)}}</span>
+                
               </div>
             </div>
           </div>
@@ -71,8 +70,7 @@
               <div class="content-text text-center mb-0">
                 <i class="text-danger icon wb-triangle-up font-size-20">
             </i>
-                <span class="font-size-40 font-weight-100">4,367</span>
-                <p class="blue-grey-400 font-weight-100 m-0">+25% From previous month</p>
+                <span class="font-size-40 font-weight-100">{{count(App\user::where('status',1)->where('isAdmin',0)->get())}}</span>
               </div>
             </div>
           </div>
@@ -108,7 +106,7 @@
 
         <!-- Third Row -->
         <!-- Third Left -->
-        <div class="col-lg-8" id="ecommerceRecentOrder">
+        <div class="col-lg-12" id="ecommerceRecentOrder">
           <div class="card card-shadow table-row">
             <div class="card-header card-header-transparent py-20">
               <div class="btn-group dropdown">
@@ -133,99 +131,29 @@
                   </tr>
                 </thead>
                 <tbody>
+                  @foreach($order as $orders)
                   <tr>
                     <td>
-                      <img src="/assets/examples/images/products/imac.png"
-                        alt="iMac" />
+                     
                     </td>
-                    <td>iMac</td>
-                    <td>Russell</td>
-                    <td>22/08/2018</td>
+                    <td>{{$orders->product->name}}</td>
+                    <td>{{$orders->user->name}}</td>
+                    <td>{{Carbon\carbon::parse($orders->created_at)->format('l jS \of F Y h:i A')}}</td>
                     <td>
-                      <span class="badge badge-success font-weight-100">Paid</span>
+                    @if(!$orders->status) <span class="badge badge-info font-weight-100"> Pending @elseif($orders->status == 1) <span class="badge badge-success font-weight-100"> Paid @else  <span class="badge badge-danger font-weight-100"> Return @endif</span>
                     </td>
                     <td>#98BC85SD84</td>
                   </tr>
-                  <tr>
-                    <td>
-                      <img src="/assets/examples/images/products/iphone.png"
-                        alt="iPhone" />
-                    </td>
-                    <td>iPhone</td>
-                    <td>Carol</td>
-                    <td>15/07/2018</td>
-                    <td>
-                      <span class="badge badge-warning font-weight-100">Pending</span>
-                    </td>
-                    <td>#98SA3C9SC</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="/assets/examples/images/products/applewatch.png"
-                        alt="apple_watch" />
-                    </td>
-                    <td>apple Watch</td>
-                    <td>Austin Pena</td>
-                    <td>10/07/2018</td>
-                    <td>
-                      <span class="badge badge-success font-weight-100">Paid</span>
-                    </td>
-                    <td>#98BC85SD84</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="/assets/examples/images/products/macmouse.png"
-                        alt="mac_mouse" />
-                    </td>
-                    <td>mac Mouse</td>
-                    <td>Randy</td>
-                    <td>22/04/2018</td>
-                    <td>
-                      <span class="badge badge-default font-weight-100">Failed</span>
-                    </td>
-                    <td>#98SA3C9SC</td>
-                  </tr>
+                  @endforeach
                 </tbody>
               </table>
+              {{$order->links()}}
             </div>
           </div>
         </div>
         <!-- End Third Left -->
 
-        <!-- Third Right -->
-        <div class="col-lg-4" id="ecommerceRevenue">
-          <div class="card card-shadow text-center pt-10">
-            <h3 class="card-header card-header-transparent blue-grey-700 font-size-14 mt-0">REVENUE</h3>
-            <div class="card-block bg-white">
-              <div class="ct-chart barChart"></div>
-              <div class="pie-view row">
-                <div class="col-6 pie-left text-center">
-                  <h5 class="blue-grey-500 font-size-14 font-weight-100">GROS REVENUE</h5>
-                  <p class="font-size-20 blue-grey-700">
-                    9,362,74
-                  </p>
-                  <div class="pie-progress pie-progress-sm" data-plugin="pieProgress" data-valuemax="100"
-                    data-valuemin="0" data-barcolor="#a57afa" data-size="100" data-barsize="4"
-                    data-goal="60" aria-valuenow="60" role="progressbar">
-                    <span class="pie-progress-number">60%</span>
-                  </div>
-                </div>
-                <div class="col-6 pie-right text-center">
-                  <h5 class="blue-grey-500 font-size-14 font-weight-100">NET REVENUE</h5>
-                  <p class="font-size-20 blue-grey-700">
-                    6,734,58
-                  </p>
-                  <div class="pie-progress pie-progress-sm" data-plugin="pieProgress" data-valuemax="100"
-                    data-valuemin="0" data-barcolor="#28c0de" data-size="100" data-barsize="4"
-                    data-goal="78" aria-valuenow="78" role="progressbar">
-                    <span class="pie-progress-number">78%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Third Right -->
+      
         <!-- End Third Row -->
       </div>
     </div>
